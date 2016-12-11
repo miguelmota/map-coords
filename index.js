@@ -63,8 +63,10 @@ if (process.stdin.isTTY) {
   const arg = process.argv[2];
   data = new Buffer(arg || ``, encoding);
 
-  if (fs.existsSync(arg)) {
-    data = fs.readFileSync(path.resolve(__dirname, arg));
+  const file = path.resolve(process.cwd(), arg);
+
+  if (fs.existsSync(file)) {
+    data = fs.readFileSync(file);
   }
 
   processData();

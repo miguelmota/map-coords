@@ -1,6 +1,6 @@
 {
   "name": "map-coords",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Plot coordinates on a world map.",
   "main": "index.js",
   "scripts": {
