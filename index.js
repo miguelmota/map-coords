@@ -80,7 +80,7 @@ if (process.stdin.isTTY) {
   });
 
   process.stdin.on(`end`, function () {
-    // There will be a trailing \n from the user hitting enter. Get rid of it.
+    // Remove trailing newline from enter key
     data = data.replace(/\n$/, ``);
     processData();
   });
