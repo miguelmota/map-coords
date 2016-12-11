@@ -29,6 +29,10 @@ $ cat coords.csv | map-coords
 $ echo 40.730610,-73.935242 34.052235,-118.243683 | map-coords
 ```
 
+```bash
+$ map-coords "40.730610,-73.935242 34.052235,-118.243683"
+```
+
 Output
 
 <img src="./screenshot.png" width="100%">
